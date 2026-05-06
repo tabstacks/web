@@ -13,8 +13,8 @@ A Chrome extension that automatically organizes your open tabs into Chrome Tab G
 
 TabStacks does not collect, transmit, or sell any personal data. All tab and group state is stored locally on your device.
 
-See the full [Privacy Policy](https://cpeteradison.github.io/tabstacks/privacy-policy.html).
+See the full [Privacy Policy](https://tabstacks.github.io/web/privacy-policy.html).
 
 ## Contact
 
-Questions or issues? [Open an issue](https://github.com/cpeteradison/tabstacks/issues) on this repository.
+Questions or issues? [Open an issue](https://github.com/tabstacks/web/issues) on this repository.
