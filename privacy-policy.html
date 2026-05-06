@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TabStacks – Privacy Policy</title>
+  <link rel="icon" type="image/png" href="assets/icon128.png">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #fafafa;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    body::before {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: #6366f1;
+    }
+
+    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 36px 0 8px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #ebebeb;
+    }
+
+    h2 .anchor-link {
+      margin-left: 6px;
+      font-size: 0.85em;
+      color: #bbb;
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+    h2:hover .anchor-link { opacity: 1; }
+    h2 .anchor-link:hover { color: #6366f1; text-decoration: none; }
+
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 40px; }
+
+    p { margin-bottom: 12px; }
+
+    ul {
+      margin: 8px 0 12px 20px;
+    }
+    ul li { margin-bottom: 6px; }
+
+    .highlight {
+      background: #f4f4f5;
+      border-left: 3px solid #6366f1;
+      padding: 14px 18px;
+      border-radius: 4px;
+      margin: 24px 0;
+      font-size: 0.95rem;
+    }
+
+    a { color: #6366f1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    code {
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: 0.875em;
+      background: #f4f4f5;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+
+    footer { margin-top: 60px; font-size: 0.85rem; color: #888; }
+  </style>
+</head>
+<body>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">TabStacks Chrome Extension &nbsp;·&nbsp; Last updated: May 6, 2026</p>
+
+  <div class="highlight">
+    <strong>Short version:</strong> TabStacks does not collect, transmit, or sell any personal data.
+    All tab and group state is stored locally on your device. A dismissable navigation bar is
+    displayed at the top of your browser tabs to let you switch between them. It never reads or
+    extracts page content.
+    The only external network call is an optional license key verification with Gumroad when you
+    activate a Pro license.
+  </div>
+
+  <h2 id="data-accessed">1. What data TabStacks accesses <a class="anchor-link" href="#data-accessed">#</a></h2>
+  <p>To group and display your tabs, TabStacks reads three things about each open tab: its URL
+  (to identify the domain), its title, and its favicon. This information never leaves your
+  browser. It is used only to build the tab groups and render the switcher bar.</p>
+  <p>A dismissable navigation bar is displayed at the top of your browser tabs. It only shows
+  navigation controls so you can switch between grouped tabs. It does not read, record, or transmit
+  any content from the pages you visit.</p>
+
+  <h2 id="stored-on-device">2. What TabStacks stores on your device <a class="anchor-link" href="#stored-on-device">#</a></h2>
+  <p>TabStacks saves the following data locally on your device:</p>
+  <ul>
+    <li><strong>Tab group state</strong> (which tabs belong to which group, plus closed-stack records used for reopening): stored on your device only, never sent anywhere.</li>
+    <li><strong>Your preferences</strong> (on/off toggle, min tabs setting, theme): stored on your device only.</li>
+    <li><strong>Pro license status and license key</strong> (Pro users only): stored in your Chrome profile, which Chrome may sync across your own signed-in devices based on your Chrome sync settings.</li>
+  </ul>
+  <p>Active tab group state is cleared automatically when a stack is dissolved. If an entire stack
+  is closed, TabStacks may keep a local closed-stack record so you can reopen or clear it from the
+  popup. Disabling the extension removes all stored group state from your device.</p>
+
+  <h2 id="tab-group-persistence">3. Why tab groups may persist in Chrome <a class="anchor-link" href="#tab-group-persistence">#</a></h2>
+  <p>Chrome does not give extensions a way to delete tab groups directly
+  (<a href="https://developer.chrome.com/docs/extensions/reference/api/tabGroups" target="_blank" rel="noopener">see Chrome tabGroups API reference</a>).
+  The only way to remove a group is to ungroup its tabs. TabStacks does this automatically for
+  groups it manages when stacks are dissolved or the extension is disabled. However, if you
+  uninstall the extension while tab groups are open, those visual groups will remain in Chrome
+  and must be closed or ungrouped manually. This is a Chrome limitation, not a choice by
+  TabStacks.</p>
+  <p>Additionally, when you close a window that contains a TabStacks-managed group, Chrome records
+  that group in its tab groups panel. TabStacks cannot see or remove those saved groups. You can
+  manage them directly in Chrome via the tab strip or Chrome's tab groups panel.</p>
+
+  <h2 id="license-verification">4. License verification (Pro users only) <a class="anchor-link" href="#license-verification">#</a></h2>
+  <p>If you activate a Pro license, TabStacks contacts
+  <a href="https://gumroad.com" target="_blank" rel="noopener">Gumroad</a> to confirm your license
+  key is valid. Only your license key and a product identifier are sent: no browsing history or
+  personal data. This check happens once when you activate and periodically to keep your license
+  current. Gumroad's own <a href="https://gumroad.com/privacy" target="_blank" rel="noopener">privacy policy</a>
+  governs how they handle that request.</p>
+  <p>Free users of TabStacks make no external network requests at all.</p>
+
+  <h2 id="permissions">5. Why TabStacks needs access to your browser <a class="anchor-link" href="#permissions">#</a></h2>
+  <p>TabStacks requires access to your tabs and browser windows to group them by domain, and
+  permission to display a navigation bar inside your browser tabs. No page content is read,
+  stored, or transmitted.</p>
+
+  <h2 id="data-sharing">6. Data sharing <a class="anchor-link" href="#data-sharing">#</a></h2>
+  <p>TabStacks does not sell, share, or disclose your data to any third party, except for the
+  license verification with Gumroad described in the
+  <a href="#license-verification">License verification</a> section.</p>
+
+  <h2 id="privacy-rights">7. Your privacy rights <a class="anchor-link" href="#privacy-rights">#</a></h2>
+  <p>Because TabStacks stores no personal data on any server, there is nothing for us to provide,
+  delete, or export on request. If you have questions about your rights related to the Gumroad
+  license verification, please refer to
+  <a href="https://gumroad.com/privacy" target="_blank" rel="noopener">Gumroad's Privacy Policy</a>.
+  For anything else, reach us via the <a href="#contact">Contact</a> section.</p>
+
+  <h2 id="childrens-privacy">8. Children <a class="anchor-link" href="#childrens-privacy">#</a></h2>
+  <p>TabStacks does not collect personal data from anyone, including children under 13.</p>
+
+  <h2 id="changes">9. Changes to this policy <a class="anchor-link" href="#changes">#</a></h2>
+  <p>If this policy changes, the "Last updated" date at the top of this page will be updated.
+  Continued use of the extension after a change means you accept the updated policy.</p>
+
+  <h2 id="contact">10. Contact <a class="anchor-link" href="#contact">#</a></h2>
+  <p>Questions or concerns about this policy? Open an issue on the
+  <a href="https://github.com/cpeteradison/tabstacks" target="_blank" rel="noopener">
+  TabStacks GitHub repository</a>.</p>
+
+  <footer>
+    &copy; <span id="year"></span> TabStacks. All rights reserved.
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
