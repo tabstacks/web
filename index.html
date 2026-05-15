@@ -12,7 +12,6 @@
   <meta name="google-site-verification" content="0EDxT5eNLNmw28a5iYwFCcDC5vXYrzTETt2naqO_13w" />
   <link rel="icon" href="assets/icon128.webp" type="image/webp" sizes="128x128" />
   <link rel="preload" as="image" href="assets/screenshots/1-marquee.webp" type="image/webp" fetchpriority="high" />
-  <link rel="dns-prefetch" href="https://img.youtube.com" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -63,6 +62,7 @@
       --bg: #161617;
       --surface: #1c1c1e;
       --accent: #25a244;
+      --accent-btn: #1a7a35;
       --accent-hover: #1e8a38;
       --text: #f5f5f7;
       --muted: #8e8e93;
@@ -122,7 +122,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--accent);
+      background: var(--accent-btn);
       color: #fff;
       font-size: 0.82rem;
       font-weight: 600;
@@ -204,7 +204,7 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: var(--accent);
+      background: var(--accent-btn);
       color: #fff;
       font-size: 0.95rem;
       font-weight: 600;
@@ -670,7 +670,7 @@
       <h2 class="section-title">Watch the demo</h2>
       <div class="video-wrapper">
         <button type="button" class="video-facade" id="video-play" aria-label="Play TabStacks demo video">
-          <img src="https://img.youtube.com/vi/0n4HCoVD4g8/maxresdefault.jpg" alt="TabStacks demo video thumbnail"
+          <img src="assets/video-thumb.jpg" alt="TabStacks demo video thumbnail"
             width="1280" height="720" loading="lazy" />
           <svg class="play-btn" viewBox="0 0 72 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <rect width="72" height="50" rx="12" fill="#f00" />
